@@ -1,4 +1,4 @@
-# WhatsApp AI Task Bot
+# WhatsApp To Tasks
 
 Turn WhatsApp messages into Google Tasks with Gemini Flash. 100% free, zero Docker, zero subscriptions.
 
