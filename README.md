@@ -28,4 +28,3 @@ export GEMINI_API_KEY="your-key"
 php test_cli.php "Dentist tomorrow 3pm"
 ```
 
-Read `DEPLOYMENT_GUIDE.md` to deploy live in ~5 minutes.
