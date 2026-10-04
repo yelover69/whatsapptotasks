@@ -1,0 +1,34 @@
+services:
+  - type: web
+    name: whatsapp-task-bot
+    env: php
+    plan: free
+    region: oregon
+    buildCommand: "echo 'Build complete'"
+    startCommand: "php -S 0.0.0.0:$PORT"
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: GOOGLE_CLIENT_SECRET
+        sync: false
+      - key: GOOGLE_REFRESH_TOKEN
+        sync: false
+      - key: META_VERIFY_TOKEN
+        value: my_secret_whatsapp_token_123
+      - key: META_ACCESS_TOKEN
+        sync: false
+      - key: META_PHONE_NUMBER_ID
+        sync: false
+      - key: APP_TIMEZONE
+        value: UTC
+      - key: FILTER_MODE
+        value: all
+      - key: ALLOWED_PHONE_NUMBERS
+        sync: false
+      - key: ALLOWED_GROUP_IDS
+        sync: false
+      - key: GROUP_TRIGGER_KEYWORD
+        sync: false
+

@@ -1,0 +1,17 @@
+{
+  "functions": {
+    "api/*.php": {
+      "runtime": "vercel-php@0.7.2",
+      "includeFiles": "{config.php,src/**,webhook.php,setup_google_auth.php,index.php}"
+    }
+  },
+  "routes": [
+    { "src": "/webhook", "dest": "/api/webhook.php" },
+    { "src": "/webhook.php", "dest": "/api/webhook.php" },
+    { "src": "/setup_google_auth.php", "dest": "/api/setup_google_auth.php" },
+    { "src": "/setup", "dest": "/api/setup_google_auth.php" },
+    { "src": "/", "dest": "/api/index.php" },
+    { "src": "/(.*)", "dest": "/api/index.php" }
+  ]
+}
+
